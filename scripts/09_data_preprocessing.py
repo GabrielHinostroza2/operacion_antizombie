@@ -150,8 +150,8 @@ def main():
         # Guardar splits
         save_dataframe(pd.DataFrame(X_train_clf, columns=clf_features), 'X_train_clf.csv')
         save_dataframe(pd.DataFrame(X_test_clf, columns=clf_features), 'X_test_clf.csv')
-        save_dataframe(pd.DataFrame(y_train_clf, columns=['Estado_Actual']), 'y_train_clf.csv')
-        save_dataframe(pd.DataFrame(y_test_clf, columns=['Estado_Actual']), 'y_test_clf.csv')
+        save_dataframe(pd.DataFrame({'Estado_Actual': y_train_clf}), 'y_train_clf.csv')
+        save_dataframe(pd.DataFrame({'Estado_Actual': y_test_clf}), 'y_test_clf.csv')
 
     # Preparar para regresion
     print_section("PREPARANDO DATOS PARA REGRESION")

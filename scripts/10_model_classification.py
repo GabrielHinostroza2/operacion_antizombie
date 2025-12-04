@@ -75,7 +75,10 @@ def train_gradient_boosting(X_train, y_train, X_test, y_test):
     """Entrenar Gradient Boosting"""
     print_subsection("Gradient Boosting Classifier")
 
-    param_grid = MODEL_PARAMS['xgboost_clf']
+    param_grid = MODEL_PARAMS['xgboost_clf'].copy()
+    if 'colsample_bytree' in param_grid:
+        del param_grid['colsample_bytree']
+
     gb = GradientBoostingClassifier(random_state=RANDOM_SEED)
 
     grid = GridSearchCV(gb, param_grid, cv=CV_FOLDS, scoring='f1_weighted', n_jobs=-1)

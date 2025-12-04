@@ -269,7 +269,7 @@ def create_summary_statistics_table(df, dataset_name='Dataset'):
     table.scale(1, 2)
 
     # Estilo
-    for i in range(len(display_cols) + 1):
+    for i in range(1, len(display_cols) + 1):
         table[(0, i-1)].set_facecolor('#40466e')
         table[(0, i-1)].set_text_props(weight='bold', color='white')
 
@@ -315,7 +315,7 @@ def analyze_pacientes(df):
         estado_counts = df['Estado_Actual'].value_counts()
 
         # Grafico de barras
-        estado_counts.plot(kind='bar', ax=axes[0], color=COLOR_PALETTE_CATEGORICAL,
+        estado_counts.plot(kind='bar', ax=axes[0], colormap=COLOR_PALETTE_CATEGORICAL,
                           edgecolor='black')
         axes[0].set_xlabel('Estado Actual')
         axes[0].set_ylabel('Cantidad de Pacientes')
