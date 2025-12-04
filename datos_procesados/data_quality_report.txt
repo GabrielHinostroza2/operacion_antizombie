@@ -1,0 +1,51 @@
+================================================================================
+REPORTE DE CALIDAD DE DATOS
+Operacion Anti-Zombie - Pipeline CRISP-DM
+Fecha: 2025-12-03 21:14:48
+================================================================================
+
+RESUMEN GENERAL
+--------------------------------------------------------------------------------
+Total de datasets: 4
+Total de filas: 1,634
+Total de columnas: 69
+Memoria total: 1.14 MB
+
+
+DATASET: PACIENTES
+--------------------------------------------------------------------------------
+Filas: 700
+Columnas: 35
+Sin problemas detectados
+
+Valores faltantes:
+  - Presion_Arterial: 41 (5.9%)
+  - Frecuencia_Cardiaca: 27 (3.9%)
+  - Mejoria_Porcentual: 24 (3.4%)
+  - Temperatura_Corporal: 22 (3.1%)
+  - Tiempo_Exposicion_Minutos: 22 (3.1%)
+
+DATASET: EVOLUCION
+--------------------------------------------------------------------------------
+Filas: 75
+Columnas: 14
+Sin problemas detectados
+
+DATASET: TRATAMIENTOS
+--------------------------------------------------------------------------------
+Filas: 9
+Columnas: 12
+Sin problemas detectados
+
+Valores faltantes:
+  - Fase_Experimental: 1 (11.1%)
+
+DATASET: RED_CONTAGIOS
+--------------------------------------------------------------------------------
+Filas: 850
+Columnas: 8
+Sin problemas detectados
+
+================================================================================
+FIN DEL REPORTE
+================================================================================

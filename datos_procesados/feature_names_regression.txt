@@ -1,0 +1,10 @@
+Edad
+Dias_Incubacion
+Numero_Personas_Contagiadas
+Temperatura_Corporal
+Frecuencia_Cardiaca
+Nivel_Consciencia
+Agresividad
+Capacidad_Cognitiva
+Dias_Desde_Tratamiento
+Mejoria_Porcentual

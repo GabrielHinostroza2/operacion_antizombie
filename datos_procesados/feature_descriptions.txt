@@ -1,0 +1,12 @@
+================================================================================
+FEATURES CREADAS
+================================================================================
+Total de nuevas features: 14
+
+Categorias:
+- Features temporales
+- Features clinicas compuestas
+- Features de tratamiento
+- Bins categoricos
+- Features de riesgo
+================================================================================

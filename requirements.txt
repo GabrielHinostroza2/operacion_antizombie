@@ -1,0 +1,50 @@
+# ==============================================================================
+# OPERACION ANTI-ZOMBIE - DEPENDENCIAS DEL PROYECTO
+# ==============================================================================
+# Pipeline CRISP-DM para Analisis de Datos y Machine Learning
+# Python 3.8+
+# ==============================================================================
+
+# Core - Manejo de datos
+pandas==2.2.0
+numpy==1.26.4
+openpyxl==3.1.2               # Para leer archivos Excel
+xlrd==2.0.1                   # Para Excel legacy
+
+# Visualizacion
+matplotlib==3.8.0
+seaborn==0.12.2
+plotly==5.17.0                # Visualizaciones interactivas (opcional)
+
+# Machine Learning
+scikit-learn==1.3.0
+xgboost==2.0.0
+lightgbm==4.1.0               # Gradient Boosting alternativo (opcional)
+imbalanced-learn==0.11.0      # Para manejo de clases desbalanceadas
+
+# Estadistica y Analisis
+scipy==1.11.2
+statsmodels==0.14.0           # Para analisis estadistico avanzado
+
+# Analisis de Redes
+networkx==3.1
+python-louvain==0.16          # Deteccion de comunidades
+
+# Utilidades
+joblib==1.3.2                 # Paralelizacion y persistencia
+tqdm==4.66.1                  # Barras de progreso
+colorama==0.4.6               # Colores en terminal
+
+# Jupyter (opcional - para explorar resultados)
+jupyter==1.0.0
+ipykernel==6.25.2
+notebook==7.0.4
+
+# Testing (opcional)
+pytest==7.4.2
+pytest-cov==4.1.0
+
+# Herramientas de desarrollo (opcional)
+black==23.9.1                 # Formateador de codigo
+flake8==6.1.0                 # Linter
+mypy==1.5.1                   # Type checking

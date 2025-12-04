@@ -1,2 +1,110 @@
-.venv
+# ==============================================================================
+# OPERACION ANTI-ZOMBIE - GITIGNORE
+# ==============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+.jupyter/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Datos procesados (archivos grandes - no subir a Git)
+datos_procesados/*.csv
+datos_procesados/*.pkl
+datos_procesados/*.parquet
+
+# Modelos entrenados (archivos grandes)
+modelos/*.pkl
+modelos/*.h5
+modelos/*.joblib
+
+# Resultados generados (imagenes, reportes)
+resultados/**/*.png
+resultados/**/*.jpg
+resultados/**/*.pdf
+resultados/**/*.html
+resultados/**/*.csv
+resultados/**/*.pkl
+
+# Archivos temporales
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# Sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Configuracion local
+config.local.py
+.env
+.env.local
+*.env
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Otros
+*.sqlite
+*.db
 

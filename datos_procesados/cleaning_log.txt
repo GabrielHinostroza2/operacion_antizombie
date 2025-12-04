@@ -1,0 +1,16 @@
+================================================================================
+LOG DE LIMPIEZA DE DATOS
+Fecha: 2025-12-03 21:15:09.679770
+================================================================================
+
+Pacientes: 700 registros
+Evolucion: 75 registros
+Tratamientos: 9 registros
+Red Contagios: 850 registros
+
+Operaciones realizadas:
+- Validacion de tipos de datos
+- Eliminacion de duplicados
+- Imputacion de valores faltantes
+- Tratamiento de outliers (winsorization)
+================================================================================
