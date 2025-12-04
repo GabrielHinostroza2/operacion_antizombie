@@ -1,0 +1,60 @@
+================================================================================
+OPERACION ANTI-ZOMBIE - INFORME FINAL
+Fecha: 2025-12-03 21:25
+================================================================================
+
+1. RESUMEN DE DATOS
+----------------------------------------
+Total Pacientes Procesados: 700
+Variables Analizadas: 35
+
+Distribucion de Estados:
+  - Zombificado: 166 (23.7%)
+  - Infectado_Moderado: 149 (21.3%)
+  - Infectado_Leve: 112 (16.0%)
+  - Infectado_Grave: 106 (15.1%)
+  - Recuperado: 99 (14.1%)
+  - Sano: 41 (5.9%)
+  - Fallecido: 27 (3.9%)
+
+2. HALLAZGOS PRINCIPALES (EDA)
+----------------------------------------
+- Las variables mas correlacionadas con el Nivel de Zombificacion son:
+  (Ver detalles en resultados/eda/bivariate/top_correlaciones_pacientes.csv)
+- Se detectaron patrones temporales significativos en la evolucion del brote.
+- El analisis de redes identifico super-spreaders clave para la contencion.
+
+3. RESULTADOS DE MODELADO
+----------------------------------------
+
+Tarea: Classification
+  Mejor Modelo: DecisionTree
+  Metrica (F1-Score): 0.9810
+
+Tarea: Regression
+  Mejor Modelo: RandomForest
+  Metrica (RMSE): 5.8409
+
+Tarea: Clustering
+  Mejor Modelo: KMeans
+  Metrica (Silhouette): 0.2398
+
+4. ESTRATEGIA DE INTERVENCION
+----------------------------------------
+Top 5 Pacientes Prioritarios para Aislamiento (Super-spreaders):
+  1. P0544, 0.0035190084150966
+  2. P0591, 0.003395584500261
+  3. P0447, 0.0032174429195843
+  4. P0478, 0.0031173178058658
+  5. P0439, 0.0030858321356096
+
+5. CONCLUSIONES Y RECOMENDACIONES
+----------------------------------------
+1. El modelo de clasificacion permite triaje automatico con alta precision.
+2. El modelo de regresion estima la gravedad futura (Nivel Zombificacion).
+3. Se recomienda aislar inmediatamente a los pacientes identificados en la seccion 4.
+4. Los tratamientos experimentales muestran eficacia variable; ver reporte detallado.
+
+================================================================================
+FIN DEL REPORTE
+================================================================================
